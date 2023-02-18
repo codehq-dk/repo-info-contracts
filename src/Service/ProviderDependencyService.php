@@ -1,8 +1,8 @@
 <?php
 
-namespace RepositoryInformation\Service;
+namespace CodeHqDk\RepositoryInformation\Service;
 
-use RepositoryInformation\Factory\InformationFactory;
+use CodeHqDk\RepositoryInformation\Factory\InformationFactory;
 
 interface ProviderDependencyService
 {
