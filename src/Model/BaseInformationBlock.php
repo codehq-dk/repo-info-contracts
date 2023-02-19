@@ -9,9 +9,9 @@ abstract class BaseInformationBlock implements InformationBlock
 {
     public function __construct(
         private readonly string $headline,
-        private readonly int $modified_timestamp,
         private readonly string $label,
         private readonly string $value,
+        private readonly int $modified_timestamp,
         private readonly ?string $details = null,
         private readonly ?string $information_origin = null,
     ) {
