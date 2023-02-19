@@ -60,7 +60,7 @@ abstract class BaseInformationBlock implements InformationBlock
 
     public function getInfoTypeId(): string
     {
-        return self::class;
+        return static::class;
     }
 
     public function getDetails(): ?string
