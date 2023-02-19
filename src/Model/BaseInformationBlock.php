@@ -17,18 +17,21 @@ abstract class BaseInformationBlock implements InformationBlock
     ) {
     }
 
-    public static function fromArray(array $array): self {
-        $class = self::INFO_TYPE_ID;
-
-        return new $class(
-            $array['headline'],
-            $array['information_origin'],
-            $array['modified_timestamp'],
-            $array['label'],
-            $array['value'],
-            $array['details']
-        );
-    }
+    /**
+     * You can easily implement this method in your plugin like shown below
+     *
+    * public static function fromArray(array $array): self {
+    *   return new self(
+    *       $array['headline'],
+    *       $array['label'],
+    *       $array['value'],
+    *       $array['modified_timestamp'],
+    *       $array['details'],
+    *       $array['information_origin'],
+    *   );
+    *}
+     */
+    abstract public static function fromArray(array $array): self;
 
     public function getHeadline(): string
     {
@@ -68,7 +71,7 @@ abstract class BaseInformationBlock implements InformationBlock
     {
         return
             [
-                'info_type' => self::INFO_TYPE_ID,
+                'info_type' => static::class,
                 'headline' => $this->headline,
                 'information_origin' => $this->information_origin,
                 'modified_timestamp' => $this->modified_timestamp,
