@@ -2,6 +2,8 @@
 
 namespace CodeHqDk\RepositoryInformation\Model;
 
+use CodeHqDk\RepositoryInformation\InformationBlocks\RepositoryNameInformationBlock;
+use CodeHqDk\RepositoryInformation\InformationBlocks\RepositoryTypeInformationBlock;
 use Exception;
 
 interface Repository
@@ -11,9 +13,9 @@ interface Repository
      */
     public function downloadCodeToLocalPath(string $local_path): void;
 
-    public function createRepositoryTypeInformationBlock(): InformationBlock;
+    public function createRepositoryTypeInformationBlock(): RepositoryTypeInformationBlock;
 
-    public function createRepositoryNameInformationBlock(): InformationBlock;
+    public function createRepositoryNameInformationBlock(): RepositoryNameInformationBlock;
 
     public function getId(): string;
 

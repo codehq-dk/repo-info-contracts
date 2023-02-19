@@ -3,6 +3,7 @@
 
 ## Version 0.0.0
 ### Changes
+* Added doc blocks and moved the two basic info blocks into this module
 * Added BaseInformationBlock
 * Added new interface Repository and InformationBlock
 * Adjust namespace

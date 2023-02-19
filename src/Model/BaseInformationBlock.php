@@ -3,7 +3,7 @@
 namespace CodeHqDk\RepositoryInformation\Model;
 
 /**
- * Use this class as a starting point, often you probably do not need to add or adjust much
+ * Use this class as a starting point, often you probably do not need to add or adjust much except adding the fromArray method
  */
 abstract class BaseInformationBlock implements InformationBlock
 {
@@ -67,6 +67,7 @@ abstract class BaseInformationBlock implements InformationBlock
     {
         return $this->details;
     }
+
     public function toArray(): array
     {
         return
