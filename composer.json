@@ -2,7 +2,8 @@
     "name": "codehq-dk/repo-info-contracts",
     "description": "Repository Information Contract. Depend on this module when creation new repository information factory plugins",
     "license": "MIT",
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
+    "prefer-stable": true,
     "require": {
         "php": ">=8.1"
     },
