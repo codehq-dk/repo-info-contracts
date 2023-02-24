@@ -1,6 +1,10 @@
 # Release notes
 ( Repository Information Contracts )
 
+## Version 1.0.0-alpha1
+## Changes
+* Change to correct composer alpha sem ver
+ 
 ## Version v0.0.2-alpha
 ### Changes
 * Added new InformationBlockFilterService interface 
