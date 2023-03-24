@@ -1,6 +1,10 @@
 # Release notes
 ( Repository Information Contracts )
 
+## Version 1.0.0-alpha2
+## Changes
+* Added possibility to supply a filter to the `InformationFactory` interface `createBlocks` method.
+
 ## Version 1.0.0-alpha1
 ## Changes
 * Change to correct composer alpha sem ver
