@@ -10,5 +10,5 @@ interface ProviderDependencyService
 
     public function registerObjectInDependencyContainer($object): void;
 
-    public function addInformactionFactoryToRegistry(InformationFactory $information_factory): void;
+    public function addInformationFactoryToRegistry(InformationFactory $information_factory): void;
 }

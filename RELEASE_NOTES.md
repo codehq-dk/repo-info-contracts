@@ -1,6 +1,11 @@
 # Release notes
 ( Repository Information Contracts )
 
+## Version 1.0.0-alpha3
+## Fixes
+* Fix spelling mistake in class `ProviderDependencyService` interface. Renamed `addInformactionFactoryToRegistry` to 
+`addInformationFactoryToRegistry`    
+
 ## Version 1.0.0-alpha2
 ## Changes
 * Added possibility to supply a filter to the `InformationFactory` interface `createBlocks` method.
